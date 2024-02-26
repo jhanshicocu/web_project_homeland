@@ -8,6 +8,8 @@
 @import url(./blocks/place.css);
 @import url(./blocks/cover.css);
 @import url(./blocks/footer.css);
+
+/* tablet 768*/
 @media screen and (min-width: 768px) and (max-width: 1279px) {
   .lead__subtitle {
     margin-top: 99px;
@@ -84,7 +86,7 @@
     width: 100%;
   }
 }
-
+/* mobile*/
 @media screen and (min-width: 320px) and (max-width: 767px) {
   .header__logo {
     width: 200px;
@@ -210,7 +212,6 @@
     letter-spacing: 0em;
     text-align: center;
     width: 220px;
-    height: 48px;
   }
   .footer {
     padding-top: 64px;
