@@ -1,0 +1,48 @@
+.intro {
+  display: flex;
+  flex-direction: column;
+}
+.intro__title {
+  font-family: Inter, sans-serif;
+  font-size: 54px;
+  font-weight: 900;
+  line-height: 58px;
+  letter-spacing: 0em;
+  max-width: 1017px;
+  margin-top: 92px;
+  margin-bottom: 40px;
+}
+
+.intro__text {
+  font-family: Inter, sans-serif;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 34px;
+  letter-spacing: 0em;
+  -webkit-font-smoothing: antialiased;
+  margin: 0;
+  max-width: 722px;
+}
+
+.intro__cite {
+  font-family: Inter, sans-serif;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 34px;
+  letter-spacing: 0em;
+  -webkit-font-smoothing: antialiased;
+  max-width: 722px;
+  justify-content: flex-end;
+  display: flex;
+}
+
+.intro__paragraph {
+  font-family: Inter, sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 26px;
+  letter-spacing: 0em;
+  -webkit-font-smoothing: antialiased;
+  max-width: 720px;
+  margin-top: 32px;
+}

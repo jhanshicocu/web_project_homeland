@@ -1,0 +1,14 @@
+.photo-grid {
+  text-align: center;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 16px;
+  margin-top: 92px;
+  margin-bottom: 92px;
+}
+
+.photo-grid__item {
+  width: 284px;
+  height: 213px;
+}
