@@ -12,3 +12,31 @@
   width: 284px;
   height: 213px;
 }
+
+/* tablet 768*/
+@media screen and (min-width: 768px) and (max-width: 1279px) {
+  .photo-grid {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 16px;
+    justify-content: center;
+  }
+
+  .photo-grid__item {
+    width: 352px;
+    height: 264px;
+  }
+}
+
+/* mobile*/
+@media screen and (min-width: 320px) and (max-width: 767px) {
+  .photo-grid {
+    height: 1812px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin: 0;
+    align-items: center;
+  }
+}

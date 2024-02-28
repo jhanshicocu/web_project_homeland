@@ -12,6 +12,7 @@
     "button text"
     ". text";
   margin-bottom: 51px;
+  justify-content: center;
 }
 
 .place__title {
@@ -71,6 +72,7 @@
   grid-area: text;
   margin-top: 48px;
 }
+
 .place__paragraph {
   font-family: Inter, sans-serif;
   font-size: 18px;
@@ -97,7 +99,98 @@
   border: none;
   min-width: 288px;
 }
+
 .place__button:hover {
   background: #0063d2;
   cursor: pointer;
+}
+
+/* tablet 768*/
+@media screen and (min-width: 768px) and (max-width: 1279px) {
+  .places {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .place {
+    width: 720px;
+    grid-template-columns: 1fr;
+    column-gap: 28px;
+  }
+
+  .place__title {
+    font-size: 42px;
+    line-height: 46px;
+    width: 340px;
+  }
+
+  .place__image {
+    width: 340px;
+    height: 340px;
+  }
+
+  .place__text {
+    row-gap: 11px;
+  }
+
+  .place__paragraph {
+    font-size: 16px;
+    line-height: 26px;
+  }
+}
+
+/* mobile*/
+@media screen and (min-width: 320px) and (max-width: 767px) {
+  .places {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .place {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: auto;
+  }
+
+  .place__title {
+    font-size: 32px;
+    line-height: 35px;
+    letter-spacing: 0em;
+    text-align: left;
+    width: 288px;
+    margin-bottom: 30px;
+    margin-top: 16px;
+  }
+
+  .place__webside {
+    margin-bottom: 30px;
+    align-self: flex-start;
+    margin-left: 16px;
+    margin-right: 16px;
+  }
+
+  .place__image {
+    width: 320px;
+    height: 320px;
+    margin: 0;
+  }
+
+  .place__paragraph {
+    font-size: 16px;
+    line-height: 26px;
+    letter-spacing: 0em;
+    text-align: left;
+    margin-left: 16px;
+    margin-right: 16px;
+  }
+
+  .place__button {
+    font-size: 14px;
+    line-height: 17px;
+    letter-spacing: 0em;
+    text-align: center;
+    margin-top: 6px;
+  }
 }

@@ -1,7 +1,9 @@
 .intro {
   display: flex;
   flex-direction: column;
+  margin-left: 100px;
 }
+
 .intro__title {
   font-family: Inter, sans-serif;
   font-size: 54px;
@@ -45,4 +47,45 @@
   -webkit-font-smoothing: antialiased;
   max-width: 720px;
   margin-top: 32px;
+}
+
+/* tablet 768*/
+@media screen and (min-width: 768px) and (max-width: 1279px) {
+  .intro {
+    margin-left: 24px;
+    margin-right: 24px;
+  }
+
+  .intro__title {
+    margin-top: 55px;
+    margin-bottom: 15px;
+  }
+
+  .intro__paragraph {
+    margin-top: 42px;
+    margin-bottom: 64px;
+  }
+}
+
+/* mobile*/
+@media screen and (min-width: 320px) and (max-width: 767px) {
+  .intro {
+    margin: 40px 16px 38px 16px;
+  }
+
+  .intro__title {
+    font-size: 32px;
+    line-height: 35px;
+    letter-spacing: 0em;
+    text-align: left;
+    margin: 0;
+  }
+
+  .intro__text {
+    margin-top: 9px;
+  }
+
+  .intro__paragraph {
+    margin: 0;
+  }
 }

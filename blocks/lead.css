@@ -3,6 +3,7 @@
   flex-direction: column;
   align-items: center;
 }
+
 .lead__title {
   font-family: Inter, sans-serif;
   font-size: 96px;
@@ -31,4 +32,33 @@
 .lead__image {
   width: 984px;
   max-width: 100%;
+}
+
+/* tablet 768*/
+@media screen and (min-width: 768px) and (max-width: 1279px) {
+  .lead__subtitle {
+    margin-top: 99px;
+    margin-bottom: 69px;
+  }
+}
+
+/* mobile*/
+@media screen and (min-width: 320px) and (max-width: 767px) {
+  .lead__title {
+    font-size: 40px;
+    line-height: 44px;
+    letter-spacing: 0em;
+  }
+
+  .lead__subtitle {
+    font-size: 16px;
+    line-height: 20px;
+    letter-spacing: 0em;
+    text-align: center;
+    margin-top: 60px;
+    margin-bottom: 40px;
+  }
+  .lead__image {
+    width: 320px;
+  }
 }
